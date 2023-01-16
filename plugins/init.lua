@@ -10,5 +10,18 @@ return {
       require "custom.plugins.lspconfig"
     end,
   },
+  -- dashboard
+  ["goolord/alpha-nvim"] = {
+     disable = false,
+  },
+  -- java
   ["mfussenegger/nvim-jdtls"] = {},
+  -- cmd for cmdline
+  ['hrsh7th/cmp-cmdline'] = {},
+  -- set cmdline
+  ["hrsh7th/nvim-cmp"] = {
+    override_options = function ()
+      require "custom.plugins.cmp"
+    end
+  }
 }

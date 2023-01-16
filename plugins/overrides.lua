@@ -8,11 +8,15 @@ M.treesitter = {
     "css",
     "javascript",
     "c",
+    "java",
+    "python",
   },
 }
 
 M.mason = {
   ensure_installed = {
+    "jdtls",
+    "pyright",
     -- lua stuff
     "lua-language-server",
     "stylua",
