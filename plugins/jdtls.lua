@@ -14,7 +14,6 @@ local workspace_dir = vim.fn.stdpath "data" .. "/site/java/workspace-root/" .. p
 -- local install_path = require("mason-registry").get_package("jdtls"):get_install_path()
 local install_path = vim.fn.stdpath "data" .. "/mason/packages/jdtls"
 
-
 -- get the current OS
 local os
 if vim.fn.has "macunix" then
