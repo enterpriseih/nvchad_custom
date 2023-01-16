@@ -8,7 +8,7 @@ local autocmd = vim.api.nvim_create_autocmd
 vim.api.nvim_create_autocmd("Filetype", {
   pattern = "java", -- autocmd to start jdtls
   callback = function()
-    print "java file autocmd"
+    print "java file autocmd starting"
     local config = require "custom.plugins.jdtls"
     if config.root_dir and config.root_dir ~= "" then
       require("jdtls").start_or_attach(config)

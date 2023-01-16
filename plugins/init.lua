@@ -1,6 +1,11 @@
 local overrides = require "custom.plugins.overrides"
 
 return {
+  ["williamboman/mason.nvim"] = {
+    override_options = {
+      ensure_installed = { "jdtls", "pyright", "lua-language-server", "clang_format", "autopep8", "stylua" },
+    },
+  },
   ["folke/which-key.nvim"] = {
     disable = false,
   },

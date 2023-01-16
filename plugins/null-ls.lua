@@ -23,7 +23,7 @@ local sources = {
   b.formatting.autopep8,
 
   -- java
-  b.formatting.google_java_format,
+  b.formatting.clang_format,
 }
 
 null_ls.setup {
