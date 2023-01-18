@@ -49,4 +49,10 @@ return {
       require "custom.plugins.null-ls"
     end,
   },
+  ["stevearc/aerial.nvim"] = {
+    config = function()
+      require "custom.plugins.aerial"
+    end,
+  },
+
 }
